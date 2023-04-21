@@ -5,6 +5,9 @@ public class Bike {
     String model;
     int price;
 
+    Bike() {
+        this("야마하", "H2-1",1000);
+    }
     public Bike(String brand) {
         this.brand = brand;
     }
