@@ -5,7 +5,7 @@ import java.util.Arrays;
 public class CardDeck {
     Card[] cards; // Card[] cards = [52]; 가능하지만 안함
     int idx;
-    CardDeck() {
+    CardDeck() { //기본 생성자
         cards = new Card[52];
 //        for(int i=0;i<cards.length;i++) {
 //            cards[i] = new Card("", "");
@@ -46,7 +46,7 @@ public class CardDeck {
 
         for(i=0;i<cards.length;i++) {
             int rIdx=(int)(Math.random()*cards.length); //Math.random()*numArr.length 에 () 씌우기
-
+            if(i == rIdx) { continue; } //중복방지. 값의 범위가 매우 넓어서 중복확률이 적다면 안해도될것을 고려해야함
             Card tmp = cards[i];
             cards[i] = cards[rIdx];
             cards[rIdx] = tmp;
@@ -55,9 +55,9 @@ public class CardDeck {
     }
 
     Card pick() {
-        if(idx == cards.length) {return null;} //예외처리. 에러 안터지게 하기위해
+        if(idx == cards.length) {return null;} //예외처리. 에러 안터지게 하기위해. idx52부터는 아래코드는 실행 안되고 null값만 받음
         Card tmp = cards[idx];
-        cards[idx] = null;
+        cards[idx] = null; //null값을 넣어서 주소값을 지움
         idx++; // 61줄 안적고 60줄을 cards[idx++] = null; 해도됨
         return tmp;
     }
