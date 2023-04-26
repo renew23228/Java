@@ -1,4 +1,7 @@
 package com.green.java.ch07;
+/*
+프로그래밍에서는 binding은 연결하다는 의미
+ */
 
 public class BindingTest {
     public static void main(String[] args) {
@@ -22,6 +25,7 @@ class Parent2 {
 
 class Child2 extends Parent2 {
     int x = 200;
+    @Override //이걸 적으면 아래가 오버라이딩이 맞는지 확인해줌.
     void method() {
         System.out.println("Child Method");
     }

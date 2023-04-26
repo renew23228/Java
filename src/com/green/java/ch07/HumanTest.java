@@ -7,10 +7,12 @@ private 멤버필드에 값을 넣고 대입하고 추출.
 
 <값 추출>
 1. getter 메서드 통해서
+
+나중에 값을 빼기 위해서 값을 넣는거임.
  */
 public class HumanTest {
     public static void main(String[] args) {
-        Human h1 = new Human("홍길동", 24, "개발자");
+        Human h1 = new Human("홍길동", 24, "개발자"); //생성자 통해 값 대입
         h1.setName("신사임당");
         h1.setAge(26);
         h1.setJob("기획자");
