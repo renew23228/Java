@@ -59,12 +59,12 @@ class Buyer3 {
         money -= p.getPrice(); //위 두 줄을 한 줄로 줄임. 가진 돈에서 구매한 제품 가격을 차감
         bonusPoint += p.getBonusPoint();
 
-
         System.out.printf("%s을(를) %d만원에 구매하였습니다.%n",p.toString(), p.getPrice());
     } //p.toString()에서 .toString() 안적어도 ok.
 
     public void printState() {
-        System.out.printf("나의 남은 돈은 %,d만원 입니다. 보너스 점수는 %,d점입니다.%n",money,bonusPoint);
+        System.out.printf("나의 남은 돈은 %,d만원 입니다. 보너스 점수는 %,d점입니다.%n",
+                money,bonusPoint);
     }
 }
 

@@ -55,6 +55,48 @@ public class MyArrayList {
         }
         str += "]"; //str = str + "]"
         return str;
-
     }
+
+    public int size() {
+        return items.length;
+    }
+    public int get(int idx) {
+        return items[idx];
+    }
+
+    //1- 5번, 2- 4번 , 3- 3번, 4- 2번, 5- 1번
+    //비교 0,1 / 1,2/ 2,3/ 3,4/
+    //
+    //1,2,3,4,5,6 //처음 가로5번 //
+    //1,2,3,4,5,6 //가로4
+    //1,2,3,4,5,6 //가로3
+    //1,2,3,4,5,6 //가로2
+    //1,2,3,4,5,6 //가로1
+    //
+    public void bubbleSort() {
+//        int temp = 0; //for 문 안에서 선언해도 되지만 밖이 나음?
+//        for(int i=items.length-1;i>0;i--) { //i=5;5>0;i-- /총 5번 돌기
+//            for(int z=0;z<i;z++) { //z=0;0<5; //줄마다 5번 4번 3번 2번 1번
+//                if(items[z]>items[z+1]) {
+//                    temp = items[z];
+//                    items[z] = items[z+1];
+//                    items[z+1] = temp;
+//                } else if(items[z]<items[z+1]) {
+//                    continue;
+//                }
+//            }
+//        }
+        for(int i = items.length-1;i>0;i--) {
+            for(int z=0;z<i;z++) {
+                int sideIdx = z+1;
+                if(items[z]>items[sideIdx]) {
+                    int temp = items[z];
+                    items[z] = items[sideIdx];
+                    items[sideIdx] = temp;
+                }
+            }
+        }
+    }
+
+
 }

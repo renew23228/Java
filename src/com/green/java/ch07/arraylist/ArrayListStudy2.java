@@ -15,10 +15,10 @@ public class ArrayListStudy2 {
 //        list.add("11");
 //        list.add(10.1);
 //        list.add(true;
-        list.add(10);
+        list.add(10); //ArrayList에 값 10을 담는다.
         list.add(13);
 
-        int n1 = list.get(0);
+        int n1 = list.get(0); //0,1번방만 있는데 2번방 요구하면 에러.
         System.out.println(list); //toString 오버라이딩
     }
 }

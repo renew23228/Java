@@ -14,9 +14,11 @@ public class ArrayListStudy3 {
         list.add(0,300); //0번 자리에 100을 대입한다.
         System.out.println(list);
 
-        int removeValue = list.remove(4); //인덱스4 번방 지우고 그 값도 리턴해줌
+        int removeValue = list.remove(4); //인덱스4 번방 지우고 그 값도 removeValue로 리턴해줌
         System.out.println("removeValue : "+ removeValue);
 
         System.out.println(list);
+
+        System.out.println(list.size()); //size메서드(리턴메서드 int타입)
     }
 }
