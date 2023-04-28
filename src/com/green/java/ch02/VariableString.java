@@ -8,7 +8,7 @@ public class VariableString {
         System.out.println(s1);
         System.out.println(s2);
 
-        String s3 = s1 + s2;
+        String s3 = s1 + s2; //문자열 더하기는 메모리 많이 씀
         System.out.println(s3);
 
         String s4 = s1 + " " + s2; // 공백 넣기

@@ -38,7 +38,7 @@ public class Naming {
         //String public;
         String pUblic; //이건 가능
 
-        final int NUM = 10; // 상수 : 한 번 값이 입력되면 수정될 수 없음. 상수는 전부 대문자. 스네이크 케이스 기법
-        //NUM = 20; //not
+        final int MAX_NUM = 10; //리터럴: 값. 그자체. 10 상수 : 한 번 값이 입력되면 수정될 수 없음. 상수는 전부 대문자. 스네이크 케이스 기법
+        //MAX_NUM = 20; //not
     }
 }

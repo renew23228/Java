@@ -13,7 +13,7 @@ public class PrintfEx2 {
         System.out.printf("d=%.3f\n", d); // 소수점3자리만
 
         System.out.println("[12345678901234567890]");
-        System.out.printf("[%s]\n", url);
+        System.out.printf("[%s]\n", url); //%s는 boolean등 모든 타입 불러올 수 있음
         System.out.printf("[%30s]\n", url);
         System.out.printf("[%-30s]\n", url);
         System.out.printf("[%.8s]\n", url);

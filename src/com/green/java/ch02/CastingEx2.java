@@ -11,8 +11,10 @@ public class CastingEx2 {
 
         int d1 = 45;
         int d2 = 7;
-        double e = (double) d1/d2; //자동형변환
+        double e = (double) d1/d2; //자동형변환 d1과 d2 중 하나만 d1만 형변환하면 d2가 자동형변환됨
+        double e1 = d1/(double)d2;
         System.out.println(e);
+        System.out.println(e1);
 
         System.out.println((float) d1/d2);
         System.out.println((double) d1/d2);

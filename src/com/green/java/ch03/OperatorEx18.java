@@ -12,3 +12,13 @@ public class OperatorEx18 {
         System.out.println(Math.floor(315.9)); //내림
     }
 }
+
+//게시판
+/*
+페이징처리
+게시판 페이지가 많을 때 Math.ceil 이용
+
+1페이지당 50개 글이 보일 때
+490개 글
+490/50
+ */

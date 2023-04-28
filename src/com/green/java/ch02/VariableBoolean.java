@@ -6,7 +6,7 @@ public class VariableBoolean {
         System.out.println(b1);
         System.out.println(b2);
 
-        b2 = 10 > 2; // b2= false가 b2=true(10>2)로 변함
+        b2 = 10 > 2; // b2= false(boolean타입의 기본값)가 b2=true(10>2)로 변함
         System.out.println(b2);
 
         boolean c1 = false, c2 = true;
