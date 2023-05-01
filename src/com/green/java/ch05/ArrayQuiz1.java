@@ -7,13 +7,13 @@ public class ArrayQuiz1 {
         //첫번째 for (값 입력, 1, 2, 3)
 
         int i;
-        //for(int i=0; i<numArr.length; i++)
-        for(i=0;i<3;i++) {
+        //for (값 입력)
+        for(i=0;i<numArr.length;i++) {
             numArr[i] = (i+1);
         }
 
         //3대신 numArr.length
-        for(i=0;i<3;i++) {
+        for(i=0;i< numArr.length;i++) {
             System.out.printf("numArr[%d] > %d\n", i, numArr[i]);
         }
 

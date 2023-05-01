@@ -12,7 +12,7 @@ public class ParamsTest {
         NumberBox nb = new NumberBox();
         nb.num = 10;
         changeNum2(nb);
-        System.out.println(nb.num);//10
+        System.out.println(nb.num);//20
 
         NumberBox nb2 = new NumberBox();
 //        NumberBox result = changeNum3(nb2);

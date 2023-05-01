@@ -9,5 +9,14 @@ public class ArrayStudy4 {
         for(int i=0; i<copyArr.length; i++) {
             System.out.printf("copyArr[%d] : %d%n", i, copyArr[i]);
         }
+
+        int[] arr = {1, 2, 3};
+        printArr(arr);
+
+        printArr(new int[] { 1, 2, 3 }); //잘 안쓰지만 이걸하려면 알아야함
+    }
+
+    public static void printArr(int[] arr) {
+
     }
 }

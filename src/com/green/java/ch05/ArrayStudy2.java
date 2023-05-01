@@ -14,7 +14,7 @@ public class ArrayStudy2 {
             System.out.println(boolArr[i]);
         }
 
-        String[] strArr = new String[3]; //기본값 null임
+        String[] strArr = new String[3]; //레퍼런스타입의 기본값 null임
         for(int i=0; i<strArr.length; i++) {
             System.out.println(strArr[i]);
         }
