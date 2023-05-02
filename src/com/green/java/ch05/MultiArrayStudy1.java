@@ -3,10 +3,10 @@ package com.green.java.ch05; //p214
 public class MultiArrayStudy1 {
     public static void main(String[] args) {
         int[][] temp = { //temp는 주소값을 4개 가지고 있음
-                {0, 0, 0}, //temp[0]
-                {0, 0, 0, 0},
-                {0, 0, 0, 0, 0},
-                {0, 0, 0, 0, 0, 0},
+                {0, 0, 0}, //temp[0] temp의 0번방
+                {0, 0, 0, 0}, //temp[1]
+                {0, 0, 0, 0, 0}, //temp[2]
+                {0, 0, 0, 0, 0, 0}, //temp[3]
         };
         System.out.printf("temp.length: %d%n", temp.length);
         System.out.printf("temp[0].length: %d%n", temp[0].length);

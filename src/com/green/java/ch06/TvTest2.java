@@ -26,7 +26,7 @@ class Tv2 {
     boolean power;
     int channel;
 
-    final int MAX_CHANNEL = 5; //스네이크케이스기법. 상수: 한 번 입력되면 변경될 수 없음
+    final int MAX_CHANNEL = 5; //스네이크케이스기법. 상수: 한 번 입력되면 변경될 수 없음 //매직넘버 5
     final int MIN_CHANNEL = 1;
     void power() {
         power = !power;
@@ -36,6 +36,11 @@ class Tv2 {
         if (channel < MAX_CHANNEL) { //5 대신 상수 MAX_CHANNEL 쓰기
             ++channel;
         }
+        //선생님 개발스타일
+        //if (channel >= MAX_CHANNEL) { //5 대신 상수 MAX_CHANNEL 쓰기
+        //            return;
+        //        }
+        //++channel;
     }
 
     void channelDown() {

@@ -11,5 +11,7 @@ public class MyMethodTest {
         int result = mm.sum2(10, 245);
         System.out.println("result : "+result); //void메서드. void메서드는 앞에 타입 = 필요없이 그냥씀
         //System클래스의 out(이라는 PrintStream객체가 가지고 있는. static객체임)의 println()(메서드)를 호출
+//        System.out.println("result : "+ mm.sum2(10,245)).~ // . 을 또 쓸 수 있다면 그 의미는?
+        //println()이 리턴한 객체주소값~~~~~ ?
     }
 }

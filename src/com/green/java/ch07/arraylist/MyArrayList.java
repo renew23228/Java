@@ -74,7 +74,7 @@ public class MyArrayList {
     //1,2,3,4,5,6 //가로1
     //
     public void bubbleSort() {
-//        int temp = 0; //for 문 안에서 선언해도 되지만 밖이 나음?
+//        int temp = 0; //for 문 안에서 선언해도 되지만 밖이 나음
 //        for(int i=items.length-1;i>0;i--) { //i=5;5>0;i-- /총 5번 돌기
 //            for(int z=0;z<i;z++) { //z=0;0<5; //줄마다 5번 4번 3번 2번 1번
 //                if(items[z]>items[z+1]) {

@@ -3,6 +3,7 @@ package com.green.java.ch06;
 
  */
 public class CarTest {
+    // CarTest는 Car클래스를 Test하기 위해 static void main 메인메서드를 담기위한 클래스임
     public static void main(String[] args) {
         Car.brand = "하하";
         System.out.println(Car.brand);

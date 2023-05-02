@@ -1,6 +1,8 @@
 package com.green.java.ch07.cards;
 
-public class Card {
+import com.green.java.blackjack.CardDeck;
+
+public class Card extends CardDeck {
     static final String[] KINDS = { "CLOVER", "HEART", "DIAMOND", "SPADE"};
     static final int NUM_MAX = 13; // 무늬별 카드 수
 
