@@ -8,7 +8,9 @@ public class AccessModifier {
 
     private: 같은 클래스 {}안에서만 접근가능
     default: privat(같은 클래스) + 같은 패키지 안에서만 접근가능
-    protected:같은 클래스 + default(같은 패키지)+ 상속관계에서만 접근가능
+    protected:같은 클래스 + default(같은 패키지)+ 패키지가 달라도 상속관계에서만 접근가능
+
+    멤버필드 중 상수는 public붙어도됨?
      */
     public static void main(String[] args) {
         ModifierTest mt1 = new ModifierTest();

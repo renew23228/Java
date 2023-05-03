@@ -19,6 +19,7 @@ class Buyer3 {
     private int money;
     private int bonusPoint;
     private Produckt3[] items; //tv computer audio를 배열에 담기 위해서 부모(Produckt3)배열 생성(?)
+    //어레이리스트로 해도됨
     private int idx;
 //    private String inventory;
 

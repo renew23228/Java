@@ -20,7 +20,7 @@ class MyTv2 {
     void channelDown() {
         channel--;
     }
-    Speaker speaker;
+    Speaker speaker; //tv는 스피커를 가졌다. 포함관계
 
     MyTv2() {
         speaker = new Speaker();

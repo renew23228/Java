@@ -20,6 +20,7 @@ class Buyer {
     public Buyer() {
         this.money = 1000;
         this.bonusPoint = 0;
+        printState();
     }
 
     public void buy(Produckt p) {
@@ -59,7 +60,7 @@ class Tv2 extends Produckt {
     public Tv2() {
         super(100);
     }
-
+    @Override
     public String toString() {
         return "Tv";
     }
@@ -69,6 +70,7 @@ class Computer extends Produckt {
     public Computer() {
         super(200); //부모(Produckt)가 기본생성자가 없으니 있는 생성자를 호출해야함
     }
+    @Override
     public String toString() { //Object에 있는 메소드 toString를 오버라이딩 한거
         return "Computer";
     } //부모(produckt)가 toString 메서드 없으니 모든객체의 부모인 Object의 메서드임

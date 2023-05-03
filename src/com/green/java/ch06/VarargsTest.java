@@ -1,9 +1,9 @@
 package com.green.java.ch06;
-
+//가변인자 (Varargs)
 public class VarargsTest {
     public static void main(String[] args) {
         sum(1); //sum:1
-        sum(1,2); //sum:4
+        sum(1,2); //sum:4 //1, 2가 들어간 2개짜리 배열을 만듬
         sum(1,2,3);//sum:7
         sum(1,2,3,4,5,6,7,8,9,10);//sum:55
 
