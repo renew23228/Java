@@ -1,42 +1,56 @@
 package com.green.java.blackjack;
 
 import java.util.List;
+import java.util.Scanner;
 
 public class BlackjackTest {
     public static void main(String[] args) {
         CardDeck cd = new CardDeck();
         Gamer gamer = new Gamer();
         Dealer dealer = new Dealer();
-        Rule rule = new Rule();
 
-//        Card c = cd.getCard(); //카드를 한장 뽑는다
-//        gamer.receiveCard(c); //gamer.receiveCard(cd.getCard()); 로 가능
-        gamer.receiveCard(cd.getCard());
-        gamer.receiveCard(cd.getCard());
+        for (int i=0;i<2;i++) {
+            gamer.receiveCard(cd.getCard());
+            dealer.receiveCard(cd.getCard());
+        }
 
-        dealer.receiveCard(cd.getCard());
-        dealer.receiveCard(cd.getCard());
+        if(dealer.isReceiveCard()) {
+            dealer.receiveCard(cd.getCard());
+        }
 
-//          풀어쓴거
-//        List<Card> cardList = gamer.openCards();
-//        int score = rule.getScore(gamer.openCards());
+        gamer.showCards();
 
-        int gamerScore = rule.getScore(gamer.openCards());
-        int dealerScore = rule.getScore(dealer.openCards());
+        //Card More? (y/n) > //저 메시지 계속 뜨고 y입력하면 카드 더 뽑고 n누르면 그만
+        Scanner scan = new Scanner(System.in);
+        while(true) { //n을 입력하기 전까지 반복문이 계속 돌아야하기 때문에
+            System.out.print("Card More? (y/n)");
+            String input = scan.nextLine();
+            if(input.equals("y")) {
+                gamer.receiveCard(cd.getCard());
+                gamer.showCards();
+            } else if (input.equals("n")) {
+                break;
+            }
+        }
+//teacher
+//        while(true) {
+//            System.out.print("Card More? (y/n)");
+//            String input = scan.nextLine();
+//            if("n".equals(input.trim().toLowerCase())) {
+//                break;
+//            }
+//            gamer.receiveCard(cd.getCard());
+//            gamer.showCards();
+//
+//        }
 
-        System.out.println(gamerScore); //Gamer가 뽑은 두 장의 카드 숫자 합계
-        System.out.println(dealerScore); //Dealer가 뽑은 두 장의 카드 숫자 합계
+
+        System.out.println("---- 딜러 카드 ----");
+        dealer.showCards();
+        Rule.whoIsWin(gamer, dealer); //클래스이름.메서드이름은 static메서드 호출
 
 
 
-
-//      검사용
-//        cd.showSize(); //52
-//        Card c = cd.getCard();
-//        cd.showSize(); //51
-//        System.out.println(c.getDenomination()); //랜덤한 주소값인지 알려면 이거 실행했을때 계속 다른값이 나옴
-        //카드덱에 있는 랜덤한 카드객체 주소값을 리턴. 리턴한 카드주소값은 카드덱에서 삭제
-        //즉, cardList.size() 호출했을 때 콘솔창에 51이 떠야함
 
     }
 }

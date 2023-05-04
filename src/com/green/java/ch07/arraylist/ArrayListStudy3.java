@@ -20,5 +20,8 @@ public class ArrayListStudy3 {
         System.out.println(list);
 
         System.out.println(list.size()); //size메서드(리턴메서드 int타입)
+
+        list.clear(); //전체삭제
+        System.out.println(list);
     }
 }

@@ -7,6 +7,20 @@ public class MyArrayList {
         System.out.println(items.length);
 
     }
+
+    public boolean contains(int val) {
+//        for(int i=0;i< items.length;i++) {
+//            if(items[i]==val) { return true; }
+//        } return false;
+
+        for(int i:items) {
+            if(i == val) { return true; }
+        } return false;
+
+    }
+    public void set(int idx, int val)  {
+        this.items[idx] = val;
+    }
     public void add(int value) {
         int[] temp = new int[items.length+1];
         temp[items.length] = value;

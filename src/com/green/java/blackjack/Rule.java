@@ -3,7 +3,7 @@ package com.green.java.blackjack;
 import java.util.List;
 
 public class Rule {
-
+    static final int BLACKJACK_SCORE = 21;
     public int getScore(List<Card> cardList) {
         int sum = 0;
         for(Card c : cardList) {
@@ -43,5 +43,20 @@ public class Rule {
             default:
                 return Integer.parseInt(c.getDenomination());
         }
+    }
+
+    public static void whoIsWin(User gamer, User dealer) {
+        int gPoint = gamer.getPointSum();
+        int dPoint = dealer.getPointSum();
+
+        if( gPoint <= BLACKJACK_SCORE && (gPoint > dPoint || dPoint > BLACKJACK_SCORE)) {
+            System.out.println("게이머 승리");
+        } else if( dPoint <= BLACKJACK_SCORE && (dPoint>gPoint||gPoint>BLACKJACK_SCORE)) {
+            System.out.println("딜러 승리");
+        } else {
+            System.out.println("무승부");
+        }
+
+
     }
 }
